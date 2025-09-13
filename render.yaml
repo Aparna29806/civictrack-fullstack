@@ -3,6 +3,6 @@ services:
     name: civictrack-backend
     env: docker
     plan: free
-    branch: main
+    branch: master
     rootDir: backend
     dockerfilePath: Dockerfile
