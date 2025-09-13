@@ -1,9 +1,8 @@
 services:
   - type: web
     name: civictrack-backend
-    env: java
+    env: docker
     plan: free
     branch: main
     rootDir: backend
-    buildCommand: ./mvnw clean install -DskipTests
-    startCommand: java -jar target/*.jar
+    dockerfilePath: Dockerfile
